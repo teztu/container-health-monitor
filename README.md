@@ -1,13 +1,15 @@
-# Container Health Monitor
+# RPE Lift Tracker
 
-A Python-based project for monitoring container health, featuring a self-hosted GitHub Actions CI/CD pipeline and an RPE-based powerlifting tracker.
+A Python-based powerlifting tracker with RPE-based e1RM calculations and a Streamlit frontend, with automated CI/CD via GitHub Actions.
 
 ## Features
 
-- Automated code quality checks with Pylint via GitHub Actions
-- Self-hosted runner on Ubuntu VM
-- RPE Calculator with Streamlit frontend
-- OOP-based lift tracking with e1RM calculations
+- Log lifts with weight, reps and RPE (6 to 10)
+- Automatic e1RM calculation based on RPE chart
+- Personal bests per exercise (Squat, Bench, Deadlift)
+- Target weight calculator
+- Delete incorrect lifts
+- Automated code quality checks with Pylint on every push
 
 ## Setup
 
@@ -17,21 +19,21 @@ A Python-based project for monitoring container health, featuring a self-hosted 
 
 ### Installation
 ```bash
-pip install -r requirements.txt
+pip install streamlit
 ```
 
-### Run RPE Calculator
+### Run
 ```bash
 streamlit run rpecalculator.py
 ```
 
 ## CI/CD
 
-This project uses GitHub Actions with a self-hosted runner for automated Pylint checks on every push to main.
+Automated Pylint checks run on every push to main via GitHub Actions with a self-hosted runner configured on a local Ubuntu VM (VirtualBox). The pipeline enforces a minimum code quality score to maintain code standards.
 
 ## Tech Stack
 
 - Python
 - Streamlit
 - GitHub Actions
-- Ubuntu (self-hosted runner)
+- Ubuntu VM (VirtualBox) - self-hosted runner
