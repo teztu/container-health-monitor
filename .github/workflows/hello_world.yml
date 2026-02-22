@@ -7,7 +7,7 @@ on:
 
 jobs:
   say-hello:
-    runs-on: ubuntu-latest
+    runs-on: nicolas-VirtualBox
     steps:
       - name: Print a message
         run: echo "hello my first test"
