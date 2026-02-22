@@ -1,6 +1,6 @@
 # RPE Lift Tracker
 
-A Python-based powerlifting tracker with RPE-based e1RM calculations and a Streamlit frontend, with automated CI/CD via GitHub Actions.
+A Python-OOP powerlifting tracker with RPE-based e1RM calculations and a Streamlit frontend, with automated CI/CD via GitHub Actions.
 
 ## Features
 
